@@ -189,4 +189,19 @@ ADD CONSTRAINT fk_pa_actor FOREIGN KEY (id_actor) REFERENCES actor(id_actor);
 
 ALTER TABLE pelicula_categoria
 ADD CONSTRAINT  fk_pc_pelicula FOREIGN KEY (id_pelicula) REFERENCES pelicula(id_pelicula),
-ADD CONSTRAINT fk_pc_categoria FOREIGN KEY (id_actor) REFERENCES actor(id_actor);
+ADD CONSTRAINT fk_pc_categoria FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria);
+
+ALTER TABLE pelicula_categoria
+ADD CONSTRAINT  fk_pc_pelicula FOREIGN KEY (id_pelicula) REFERENCES pelicula(id_pelicula),
+ADD CONSTRAINT fk_pc_categoria FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria);
+
+ALTER TABLE ciudad
+ADD CONSTRAINT  fk_ciudad_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais);
+
+ALTER TABLE direccion
+ADD CONSTRAINT  fk_direccion_pais FOREIGN KEY (id_ciudad) REFERENCES ciudad(id_ciudad);
+
+
+ALTER TABLE pelicula
+ADD CONSTRAINT  fk_pelicula_idioma FOREIGN KEY (id_idioma) REFERENCES idioma(id_idioma),
+ADD CONSTRAINT  fk_pelicula_idioma_original FOREIGN KEY (id_idioma_original) REFERENCES idioma(id_idioma);

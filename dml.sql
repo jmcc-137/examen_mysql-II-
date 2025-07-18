@@ -211,7 +211,7 @@ COMMIT;
 --
 
 SET AUTOCOMMIT=0;
-INSERT INTO `direccion` VALUES (1,'47 MySakila Drive',NULL,'Alberta',300,'','','2014-09-25 22:30:27'),
+INSERT INTO direccion VALUES (1,'47 MySakila Drive',NULL,'Alberta',300,'','','2014-09-25 22:30:27'),
 (2,'28 MySQL Boulevard',NULL,'QLD',576,'','','2014-09-25 22:30:09'),
 (3,'23 Workhaven Lane',NULL,'Alberta',300,'','14033335568','2014-09-25 22:30:27'),
 (4,'1411 Lillydale Drive',NULL,'QLD',576,'','6172235589','2014-09-25 22:30:09'),
